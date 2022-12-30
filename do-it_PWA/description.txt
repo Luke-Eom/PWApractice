@@ -1,0 +1,22 @@
+Sub
+simple laptop management app
+campus (동작, G벨리, 서초)
+laptop (ID: stu4-####, campus, status:사용중 or 창고 or 미확인 ...)
+student (name : , campus, )
+
+
+
+
+
+Main
+PWA app for attedance check / dat  recording
+
+Function
+1. attendance check (push alaram)
+
+2. Log-in (have info of users - name, course# or trainer#)
+
+3-1. + Memo save (course)
+
+3-2. pic save (diet), work out record ()
+
