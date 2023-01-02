@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue practice</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <style>
+        .blue_style {color: rgb(40, 85, 200)}
+    </style>
 </head>
 <body>
+    <div id = "time">
+        <h1 v-bind:class="sColorName + '_style'"> Current Time</h1>
+        <input :value = "sHours + '시' + sMinutes + '분입니다'">
+        <button>{{check}}</button>
+    </div>    
     <div id="main">
         <p>{{ sTitle }}</p>
     </div>
@@ -19,6 +27,24 @@
                 sTitle: 'First Step'
             }
         });
+
+        let app = new Vue({
+            el: '#time',
+            data: {
+                sHours: new Date().getHours(),
+                sMinutes: new Date().getMinutes(),
+                sColorName: 'blue',
+                check: '확인'
+            }
+            
+        })
+
+        let app2 = new Vue({
+            el: '#nav',
+            data: {
+                
+            }
+        })
     </script>
 </body>
 </html>
