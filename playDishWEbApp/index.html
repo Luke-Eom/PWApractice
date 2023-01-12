@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="icon" href="images/icons/favicon.ico">
+    <link rel="icon" href="images/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!-- 서비스 워커 등록 -->
+    <script>
+       if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('./sw.js')
+                .then((pSW) => console.log('서비스 워커가 등록 완료', pSW))
+                .catch((pErr) => console.log('서비스 워커가 등록 실패', pErr))
+    } 
+    </script>
+</body>
+</html>
+<!-- can i use 사이트 활용해서 서비스워커 사용 적절한지 확인!! -->

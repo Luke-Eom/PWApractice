@@ -1,0 +1,39 @@
+{
+    "name": "플레이디쉬",
+    "short_name": "PlayDish",
+    "description": "PWA start program",
+    "scope": ".",
+    "start_url": "./",
+    "display": "standalone",
+    "orientation" : "portrait",
+    "background_color" : "#",
+    "theme_color": "#",
+    "icons": [
+      {
+        "src": "images/icons/playDishIcon192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "images/icons/playDishIcon512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],  
+    "shortcuts": [
+      {
+        "name": "",
+        "short_name": "",
+        "description": "",
+        "url": "./",
+        "icons": [{ "src": "images/icons/*.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "",
+        "short_name": "",
+        "description": "",
+        "url": "./",
+        "icons": [{ "src": "images/icons/*.png", "sizes": "192x192" }]
+      }
+    ]
+  }
